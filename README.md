@@ -2,7 +2,8 @@
 This program analyzes multiple twitch.tv channels and collects follower/follows data. Data is then processed and analyzed using Jaccardian and Cosine similarity measures to compute channel similarity. Graphs can be visualized by importing the .GML file to the graph analysis software of your choice. Examples shown below were taken via Gephy. 
 
 ## Examples
-
+![Example 1](/Example1.png?raw=true)
+![Example 2](/Example2.png?raw=true)
 
 ### Pseudo-code
 
