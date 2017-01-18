@@ -4,7 +4,7 @@ This program analyzes multiple twitch.tv channels and collects follower/follows 
 ## Pseudo-code
 
 Twitch API is comprised of two parts: the REST API and a JavaScript SDK. Using the API, we sent requests via the base URL https://api.twitch.tv/kraken and with our own client-ID authentication to ensure that data we send and receive is not rate limited. The basic pseudocode for our mining algorithm is as follows:
-
+```
 Prompt user input for # of channels to compare
 Initialize usernames array of size #
 FOR i = 0 to #
@@ -18,3 +18,4 @@ FOR i = 0 to #
 END FOR
 Write channels and follower nodes to .GML file
 Write directed edges pointing from follower to respective channels to .GML file
+```
