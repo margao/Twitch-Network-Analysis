@@ -10,14 +10,13 @@ import org.json.JSONTokener;
 import java.util.*;
 
 public class Main {
-	final static String clientID = "jj8yi3c0dqxb632vuwx16fxbd4s741z";
 
 	public static void main(String[] args) throws Exception {
 
 		Scanner in = new Scanner(System.in);
 		ArrayList<User> al = new ArrayList<User>();
-//		System.out.println("Enter Twitch API Client ID: ");
-//		String clientID = in.nextLine();
+		System.out.println("Enter Twitch API Client ID: ");
+		String clientID = in.nextLine();
 		System.out.println("Enter # of users to compare: ");
 		String[] usernames = new String[Integer.parseInt(in.nextLine())];
 		
@@ -32,31 +31,6 @@ public class Main {
 			al.get(i).buildFollowers(clientID, usernames[i], 100);
 		}
 		
-//		User[] bag = new User[7];
-//
-//		// Build follower data for each twich account
-//		User skd = new User(clientID, "superkawaiidesu");
-//		skd.buildFollowers(clientID, "superkawaiidesu", 100);
-//		bag[0] = skd;
-//		User lk = new User(clientID, "lordknight");
-//		lk.buildFollowers(clientID, "lordknight", 100);
-//		bag[1] = lk;
-//		User hbox = new User(clientID, "hungrybox");
-//		hbox.buildFollowers(clientID, "hungrybox", 100);
-//		bag[2] = hbox;
-//		User jiyuna = new User(clientID, "animeilluminati");
-//		jiyuna.buildFollowers(clientID, "animeilluminati", 100);
-//		bag[3] = jiyuna;
-//		User cirnotv = new User(clientID, "cirno_tv");
-//		cirnotv.buildFollowers(clientID, "cirno_tv", 100);
-//		bag[4] = cirnotv;
-//		User nairomk = new User(clientID, "nairomk");
-//		nairomk.buildFollowers(clientID, "nairomk", 100);
-//		bag[5] = nairomk;
-//		User adrentv = new User(clientID, "adren_tv");
-//		adrentv.buildFollowers(clientID, "adren_tv", 100);
-//		bag[6] = adrentv;
-
 		// Write to .gml file
 		createGML(al);
 	}
